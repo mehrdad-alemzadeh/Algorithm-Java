@@ -19,7 +19,8 @@ public class LinkedListing {
 		public void appendToTail(int d) {
 			Node end = new Node(d);
 			Node n = this;// if you have multiple objects accessing the same linked list you need to have
-							// a HEAD property
+							// a HEAD property. "this" refers to the current Node object that 
+							// calls appendToTail
 			while (n.next != null) {
 				n = n.next;
 			}
